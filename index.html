@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Pokemon Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+
+      <!-- Navbar -->
+      <div class="nav">
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <img src="./assets/International_Pokémon_logo.svg" alt="Pokemon Logo" />
+
+        <button>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+
+      <!-- Search -->
+      <div class="search">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for a Pokémon..." />
+        </div>
+
+        <div class="filter-dropdown">
+          <span>Filter by types (1)</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+        <button class="sort-btn">
+          <i class="fa-solid fa-arrow-down-wide-short"></i>
+        </button>
+      </div>
+
+      <!-- Cards -->
+      <section class="content">
+
+        <div class="pokemon-card grass-card">
+          <div class="card-top">
+            <p>#0908</p>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+
+          <div class="type-icon grass-icon">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+
+          <div class="image-box">
+            <img src="./assets/908.png" alt="Meowscarada" />
+          </div>
+
+          <h2>Meowscarada</h2>
+
+          <div class="card-bottom">
+            <div class="type-badge grass-badge">
+              <i class="fa-solid fa-leaf"></i>
+              <span>GRASS</span>
+            </div>
+
+            <button class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pokemon-card dark-card">
+          <div class="card-top">
+            <p>#0624</p>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+
+          <div class="type-icon dark-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div class="image-box">
+            <img src="./assets/624.png" alt="Pawniard" />
+          </div>
+
+          <h2>Pawniard</h2>
+
+          <div class="card-bottom">
+            <div class="type-badge dark-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>DARK / STEEL</span>
+            </div>
+
+            <button class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pokemon-card fire-card">
+          <div class="card-top">
+            <p>#0229</p>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+
+          <div class="type-icon fire-icon">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div class="image-box">
+            <img src="./assets/229.png" alt="Houndoom" />
+          </div>
+
+          <h2>Houndoom</h2>
+
+          <div class="card-bottom">
+            <div class="type-badge fire-badge">
+              <i class="fa-solid fa-fire"></i>
+              <span>DARK / FIRE</span>
+            </div>
+
+            <button class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pokemon-card water-card">
+          <div class="card-top">
+            <p>#0686</p>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+
+          <div class="type-icon water-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+
+          <div class="image-box">
+            <img src="./assets/686.png" alt="Inkay" />
+          </div>
+
+          <h2>Inkay</h2>
+
+          <div class="card-bottom">
+            <div class="type-badge water-badge">
+              <i class="fa-solid fa-droplet"></i>
+              <span>DARK / PSYCHIC</span>
+            </div>
+
+            <button class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Bottom Feature Bar -->
+      <section class="feature-bar">
+        <div class="feature-item">
+          <div class="feature-icon blue">
+            <i class="fa-solid fa-circle-notch"></i>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <p>Discover all your<br />favorite Pokémon</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="feature-item">
+          <div class="feature-icon green">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div>
+            <h3>Filter</h3>
+            <p>Find Pokémon by<br />types and abilities</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="feature-item">
+          <div class="feature-icon yellow">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <h3>Collection</h3>
+            <p>Save and manage<br />your collection</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="feature-item">
+          <div class="feature-icon purple">
+            <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <div>
+            <h3>Stats</h3>
+            <p>View stats and learn<br />about Pokémon</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <i class="fa-regular fa-circle-dot"></i>
+        <p>© 2024 Pokémon. All rights reserved.</p>
+      </footer>
+
+    </main>
+  </body>
+</html>
